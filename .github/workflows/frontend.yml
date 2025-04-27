@@ -36,7 +36,7 @@ jobs:
         run: pnpm i
       - name: Install playwright
         working-directory: ./frontend
-        run: pnpm exec playwright install
+        run: pnpm exec playwright install --with-deps
       - name: Test units
         working-directory: ./frontend
         run: pnpm test:unit
