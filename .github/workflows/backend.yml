@@ -54,7 +54,7 @@ jobs:
         env:
           POSTGRES_CONNECTION: postgresql://postgres:postgress@localhost:5432/vitest
       - name: Test with coverage
-        working-directory: ./server
+        working-directory: ./backend
         run: pnpm test
         env:
           MODE: CI

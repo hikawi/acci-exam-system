@@ -42,6 +42,9 @@ jobs:
         run: pnpm test:unit
         env:
           MODE: CI
+      - name: Build for E2E testing
+        working-directory: ./frontend
+        run: pnpm build-only
       - name: Test E2E
         working-directory: ./frontend
         run: pnpm test:e2e
