@@ -1,4 +1,4 @@
-name: ACCi API CI/CD
+name: ACCI API CI/CD
 
 permissions:
   packages: write
@@ -8,8 +8,6 @@ concurrency: prod
 on:
   push:
     branches: ["main"]
-    paths:
-      - "backend/**"
   workflow_dispatch:
 
 jobs:
