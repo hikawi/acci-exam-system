@@ -21,4 +21,8 @@ router.use("/certificates", certificatesRouter);
 router.use("/extensions", extensionRouter);
 router.use("/participants", participantsRouter);
 
+router.get("/health", async (_req, res) => {
+  res.status(200).json({ status: "healthy" });
+});
+
 export { router as mainRouter };

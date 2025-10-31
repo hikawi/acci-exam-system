@@ -54,4 +54,4 @@ jobs:
           script: |
             cd /srv
             docker compose up -d --pull always acci-api
-            docker system prune -af
+            docker system prune -f
