@@ -16,7 +16,7 @@ Group Members:
 - Nguyễn Hà Nam Trân
 - Me ([@hikawi](https://github.com/hikawi))
 
-## Code of Conduct
+## Coding Conventions
 
 When contributing (basically my groupmates), please follow some simple rules:
 
