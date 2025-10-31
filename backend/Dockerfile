@@ -9,9 +9,8 @@ RUN apk add --no-cache curl
 RUN corepack enable pnpm && pnpm i --prod --frozen-lockfile
 
 # Copy built assets from builder stage
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/src ./src
-COPY --from=builder /app/drizzle.config.ts .
+COPY ./src ./src
+COPY ./drizzle.config.ts .
 
 CMD ["pnpm", "tsx", "src/index.ts"]
 
